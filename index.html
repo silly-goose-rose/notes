@@ -25,11 +25,50 @@
       </audio>
       <p class="caption">when I first started Second Life.</p>
     </section>
+    <section class="feedback">
+
+  <p class="feedback-text">
+    If you'd like to leave something behind.
+  </p>
+
+  <iframe
+      data-tally-src="https://tally.so/embed/WOgxvk?alignLeft=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      width="100%"
+      height="628"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      title="Leave me a note">
+  </iframe>
+
+</section>
   </main>
 
   <script
     data-goatcounter="https://silly-goose-rose.goatcounter.com/count"
     async
     src="https://gc.zgo.at/count.js"></script>
+  
+  <script>
+var d=document,w="https://tally.so/widgets/embed.js",v=function(){
+  if(typeof Tally!="undefined"){
+    Tally.loadEmbeds();
+  }else{
+    d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
+      e.src=e.dataset.tallySrc;
+    });
+  }
+};
+if(typeof Tally!="undefined"){
+  v();
+}else if(d.querySelector('script[src="'+w+'"]')==null){
+  var s=d.createElement("script");
+  s.src=w;
+  s.onload=v;
+  s.onerror=v;
+  d.body.appendChild(s);
+}
+</script>
 </body>
 </html>
