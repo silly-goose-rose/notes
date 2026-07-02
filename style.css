@@ -2,7 +2,6 @@
   --bg: #faf9f6;
   --text: #111111;
   --muted: #77736c;
-  --line: #d8d2c8;
 }
 
 * {
@@ -23,13 +22,9 @@ body {
 
 .page {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 8vh 24px;
-}
-
-.note {
-  width: min(520px, 100%);
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 12vh 24px 14vh;
   text-align: center;
 }
 
@@ -40,35 +35,50 @@ body {
   margin-bottom: 18vh;
 }
 
+.note {
+  margin: 0 0 22vh;
+}
+
+.note:last-child {
+  margin-bottom: 0;
+}
+
 .number {
   font-size: clamp(56px, 11vw, 116px);
   line-height: 1;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   font-weight: 400;
 }
 
 .player {
   width: min(320px, 100%);
-  margin-bottom: 9vh;
+  margin-bottom: 7vh;
 }
 
 .caption {
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.5;
-  color: var(--text);
   margin: 0;
 }
 
 @media (max-width: 560px) {
+  .page {
+    padding-top: 10vh;
+  }
+
   .site-title {
     margin-bottom: 14vh;
   }
 
+  .note {
+    margin-bottom: 18vh;
+  }
+
   .number {
-    margin-bottom: 8vh;
+    margin-bottom: 7vh;
   }
 
   .player {
-    margin-bottom: 7vh;
+    margin-bottom: 6vh;
   }
 }
