@@ -81,4 +81,14 @@ body {
   .player {
     margin-bottom: 6vh;
   }
+  .feedback {
+  margin-top: 18rem;
 }
+
+.feedback-text {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
