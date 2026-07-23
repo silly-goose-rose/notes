@@ -39,64 +39,85 @@ html{
 }
 
 
-body{
+body {
+    position: relative;
+    isolation: isolate;
 
-    font-family:"Ubuntu",sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: var(--charcoal);
+    line-height: 1.75;
 
-    font-weight:300;
-
-    color:var(--charcoal);
-
-    line-height:1.75;
-
-    min-height:100vh;
-
-    overflow-x:hidden;
-
-
-
-    /*
-        Paper
-    */
+    min-height: 100vh;
+    overflow-x: hidden;
 
     background:
+        radial-gradient(
+            circle at 14% 22%,
+            rgba(40, 40, 40, 0.035),
+            transparent 18%
+        ),
 
-      radial-gradient(
-      circle at 14% 22%,
-      rgba(40,40,40,.035),
-      transparent 18%
-      ),
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(0, 0, 0, 0.03),
+            transparent 24%
+        ),
 
-      radial-gradient(
-      circle at 82% 18%,
-      rgba(0,0,0,.03),
-      transparent 24%
-      ),
+        radial-gradient(
+            circle at 22% 76%,
+            rgba(60, 60, 60, 0.025),
+            transparent 28%
+        ),
 
-      radial-gradient(
-      circle at 22% 76%,
-      rgba(60,60,60,.025),
-      transparent 28%
-      ),
+        radial-gradient(
+            circle at 74% 82%,
+            rgba(0, 0, 0, 0.02),
+            transparent 36%
+        ),
 
-      radial-gradient(
-      circle at 74% 82%,
-      rgba(0,0,0,.02),
-      transparent 36%
-      ),
+        radial-gradient(
+            circle at 52% 46%,
+            rgba(20, 20, 20, 0.018),
+            transparent 42%
+        ),
 
-      radial-gradient(
-      circle at 52% 46%,
-      rgba(20,20,20,.018),
-      transparent 42%
-      ),
+        linear-gradient(
+            180deg,
+            #f3f1ed,
+            #eeebe7
+        );
+}
 
-      linear-gradient(
-      180deg,
-      #f3f1ed,
-      #eeebe7
-      );
+body::before {
+    content: "";
 
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    pointer-events: none;
+    opacity: 0.34;
+
+    background:
+        radial-gradient(
+            circle at 18% 24%,
+            rgba(42, 40, 39, 0.10) 0 0.7px,
+            transparent 0.9px
+        ) 0 0 / 7px 7px,
+
+        radial-gradient(
+            circle at 70% 63%,
+            rgba(65, 61, 59, 0.07) 0 0.55px,
+            transparent 0.8px
+        ) 2px 3px / 11px 11px,
+
+        repeating-linear-gradient(
+            104deg,
+            transparent 0 13px,
+            rgba(40, 38, 37, 0.018) 14px,
+            transparent 15px 29px
+        );
 }
 
 
@@ -180,7 +201,7 @@ body{
 .note-title {
     width: 420px;
     max-width: 100%;
-    margin: 0 0 0.35rem 2.3rem;
+    margin: 0 0 0.35rem 1.6rem;
 
     padding: 0;
     background: none;
@@ -374,6 +395,31 @@ iframe{
 
 }
 
+/* -------------------------------------------------- */
+
+.form-header {
+    margin-bottom: 1.8rem;
+}
+
+.form-header h2 {
+    margin: 0;
+
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+}
+
+.form-header p {
+    margin-top: 1rem;
+
+    color: #4a4846;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
 
 
 /* -------------------------------------------------- */
@@ -426,7 +472,8 @@ iframe{
 
 .note-title{
 
-    width:100%;
+    width: 100%;
+    margin-left: 1.6rem;
 
 }
 
