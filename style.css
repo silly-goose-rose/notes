@@ -61,23 +61,41 @@ body{
 
     background:
 
-    radial-gradient(circle at 18% 24%,
-    rgba(60,60,60,.025),
-    transparent 28%),
+radial-gradient(
+circle at 14% 22%,
+rgba(40,40,40,.035),
+transparent 18%
+),
 
-    radial-gradient(circle at 78% 76%,
-    rgba(30,30,30,.02),
-    transparent 36%),
+radial-gradient(
+circle at 82% 18%,
+rgba(0,0,0,.03),
+transparent 24%
+),
 
-    radial-gradient(circle at 42% 52%,
-    rgba(0,0,0,.015),
-    transparent 48%),
+radial-gradient(
+circle at 22% 76%,
+rgba(60,60,60,.025),
+transparent 28%
+),
 
-    linear-gradient(
-        180deg,
-        var(--paper),
-        var(--paper2)
-    );
+radial-gradient(
+circle at 74% 82%,
+rgba(0,0,0,.02),
+transparent 36%
+),
+
+radial-gradient(
+circle at 52% 46%,
+rgba(20,20,20,.018),
+transparent 42%
+),
+
+linear-gradient(
+180deg,
+#f3f1ed,
+#eeebe7
+);
 
 }
 
@@ -119,7 +137,7 @@ body{
 
         8rem
 
-        6rem;
+        7.5rem;
 
 }
 
@@ -162,30 +180,23 @@ body{
 .note-title{
 
     width:420px;
-
     max-width:100%;
 
-    text-align:left;
-
-    font-weight:300;
+    margin-bottom:.9rem;
 
     font-size:1rem;
 
+    font-weight:300;
+
     letter-spacing:.03em;
 
-    padding:
+    text-align:left;
 
-        .7rem
+    padding:0;
 
-        1.2rem;
+    background:none;
 
-    margin-bottom:1rem;
-
-    background:
-
-        rgba(154,151,164,.18);
-
-    border-radius:2px;
+    border:none;
 
 }
 
