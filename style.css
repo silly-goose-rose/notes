@@ -61,41 +61,41 @@ body{
 
     background:
 
-radial-gradient(
-circle at 14% 22%,
-rgba(40,40,40,.035),
-transparent 18%
-),
+      radial-gradient(
+      circle at 14% 22%,
+      rgba(40,40,40,.035),
+      transparent 18%
+      ),
 
-radial-gradient(
-circle at 82% 18%,
-rgba(0,0,0,.03),
-transparent 24%
-),
+      radial-gradient(
+      circle at 82% 18%,
+      rgba(0,0,0,.03),
+      transparent 24%
+      ),
 
-radial-gradient(
-circle at 22% 76%,
-rgba(60,60,60,.025),
-transparent 28%
-),
+      radial-gradient(
+      circle at 22% 76%,
+      rgba(60,60,60,.025),
+      transparent 28%
+      ),
 
-radial-gradient(
-circle at 74% 82%,
-rgba(0,0,0,.02),
-transparent 36%
-),
+      radial-gradient(
+      circle at 74% 82%,
+      rgba(0,0,0,.02),
+      transparent 36%
+      ),
 
-radial-gradient(
-circle at 52% 46%,
-rgba(20,20,20,.018),
-transparent 42%
-),
+      radial-gradient(
+      circle at 52% 46%,
+      rgba(20,20,20,.018),
+      transparent 42%
+      ),
 
-linear-gradient(
-180deg,
-#f3f1ed,
-#eeebe7
-);
+      linear-gradient(
+      180deg,
+      #f3f1ed,
+      #eeebe7
+      );
 
 }
 
@@ -182,6 +182,7 @@ linear-gradient(
     width:420px;
     max-width:100%;
 
+    margin-left:2.3rem;
     margin-bottom:.9rem;
 
     font-size:1rem;
